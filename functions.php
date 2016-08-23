@@ -7,8 +7,8 @@ class AreAnagrams {
         if ($a === $b) {
             return true;
         } else {
-            if (strpos($a, $b[0]) !== false) {
-                return self::areStringsAnagrams(preg_replace("/" . $b[0] . "/", "", $a, 1), substr($b, 1));
+            if (strpos($a, $b[0]) !== false) { /* ANKI */
+                return self/* ANKI */::areStringsAnagrams(preg_replace("/" . $b[0] . "/", "", $a, 1) /* ANKI */, substr($b, 1) /* ANKI */);
             }
         }
         return false;
